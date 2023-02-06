@@ -1,7 +1,7 @@
 <?php
-    namespace App\Model;
+    namespace app\Model;
 
-    use App\Util\Router as Router;
+    use app\Util\Router as Router;
 
     Class Directories
     {

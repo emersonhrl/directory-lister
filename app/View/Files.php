@@ -1,7 +1,7 @@
 <?php
-    namespace App\View;
+    namespace app\View;
 
-    use App\Util\Router as Router;
+    use app\Util\Router as Router;
 
     Class Files {
         private static function renderContent($file) {

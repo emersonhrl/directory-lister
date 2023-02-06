@@ -1,11 +1,11 @@
 <?php
     require_once __DIR__ . "/vendor/autoload.php";
 
-    use App\Config\Env as Env;
-    use App\Util\Router as Router;
-    use App\Controller\DirectoryLister as DirectoryLister;
-    use App\Controller\CodeViewer as CodeViewer;
-    use App\View\Folders as Folders;
+    use app\Config\Env as Env;
+    use app\Util\Router as Router;
+    use app\Controller\DirectoryLister as DirectoryLister;
+    use app\Controller\CodeViewer as CodeViewer;
+    use app\View\Folders as Folders;
 
     Env::create(__DIR__);
 

@@ -1,7 +1,7 @@
 <?php
-    namespace App\Controller;
+    namespace app\Controller;
     
-    use App\Model\Directories;
+    use app\Model\Directories;
 
     Class DirectoryLister
     {

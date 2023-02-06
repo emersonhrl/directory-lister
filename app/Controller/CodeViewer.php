@@ -1,7 +1,7 @@
 <?php
-    namespace App\Controller;
+    namespace app\Controller;
 
-    use App\View\Files as Files;
+    use app\View\Files as Files;
 
     Class CodeViewer
     {

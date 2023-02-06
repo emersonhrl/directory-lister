@@ -1,13 +1,13 @@
 <?php
-    namespace App\View;
+    namespace app\View;
 
-    use App\Util\Router as Router;
+    use app\Util\Router as Router;
 
     Class Folders {
         private static function openAs($extension) {
             $extensions = array_map("trim", explode(",", str_replace(array("[", "]", "'", "\""), "", $_ENV["VIEW_FILES_AS_CODE"])));
             if (in_array($extension, $extensions)) {
-                return "/code?path=";
+                return "code?path=";
             }
         }
 
@@ -18,7 +18,7 @@
                     case "folder":
                         $name = $files["name"] . "/";
                         $icon = "folder-fill";
-                        $path = "/?path=" . $files["path"];
+                        $path = "?path=" . $files["path"];
                         break;
                     case "file":
                         $name = $files["name"];

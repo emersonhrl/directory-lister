@@ -1,5 +1,5 @@
 <?php
-    namespace App\Util;
+    namespace app\Util;
 
     Class Router
     {
@@ -9,7 +9,7 @@
         private $routes;
 
         public function __construct() {
-            $this->uri = $_SERVER["REQUEST_URI"];
+            $this->uri = "/" . $_GET["uri"];
             $this->route = explode("?", $this->uri)[0];
             $this->method = $_SERVER["REQUEST_METHOD"];
         }
