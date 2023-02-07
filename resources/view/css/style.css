@@ -58,7 +58,6 @@ div.header-list .max {
     border: 1px solid #DFDFDF;
     border-top: none;
     display: flex;
-    max-width: 800px;
     padding: 0 30px;
     width: 100%;
 }
@@ -102,7 +101,6 @@ div.container {
 div.list {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
     padding: 20px;
     width: 100%;
 }
@@ -137,6 +135,7 @@ div.name {
     align-items: center;
     display: flex;
     justify-content: left;
+    white-space: nowrap;
 }
 
 div.name i.bi {
@@ -159,4 +158,39 @@ a:hover div.name i.bi {
     div.date {
         display: flex;
     }
+}
+
+div.bar_fixed {
+    align-items: center;
+    background-color:#1B73E8;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+div.bar_fixed a {
+    color: #FFFFFF;
+}
+
+div.bar_fixed a:hover {
+    background-color: #055CCF;
+}
+
+div.bar_fixed i {
+    align-items: center;
+    display: flex;
+    font-size: 35px;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+}
+
+pre {
+    margin-top: 80px;
+    padding: 10px;
 }

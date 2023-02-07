@@ -41,7 +41,7 @@
 
         private static function renderButton($page) {
             $path = Router::getPath();
-            $button = "<a href='/'><i class='bi bi-house-fill'></i></a>";
+            $button = "<a href='./'><i class='bi bi-house-fill'></i></a>";
 
             if ($path != getcwd()) {
                 $folder = "";
