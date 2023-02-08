@@ -167,7 +167,6 @@ div.bar_fixed {
     height: 50px;
     justify-content: space-between;
     left: 0;
-    padding: 0 10px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -191,6 +190,7 @@ div.bar_fixed i {
 }
 
 pre {
-    margin-top: 80px;
+    margin: 80px 0;
     padding: 10px;
+    white-space: pre-wrap;
 }

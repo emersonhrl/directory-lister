@@ -11,6 +11,7 @@
         private static function renderButtons($page) {
             $path = str_replace("/" . basename(Router::getPath()), "", Router::getPath());
             $buttons = "<a href='./?path=" . $path . "'><i class='bi bi-arrow-left'></i></a>";
+            $buttons .= "<a href='./download?path=" . Router::getPath() . "'><i class='bi bi-cloud-arrow-down-fill'></i></a>";
             $buttons .= "<a href='./" . Router::getPath() . "'><i class='bi bi-play-fill'></i></a>";
 
             return str_replace("{{buttons}}", $buttons, $page);

@@ -5,6 +5,7 @@
     use app\Util\Router as Router;
     use app\Controller\DirectoryLister as DirectoryLister;
     use app\Controller\CodeViewer as CodeViewer;
+    use app\Controller\Download as Download;
     use app\View\Folders as Folders;
 
     Env::create(__DIR__);
@@ -18,6 +19,10 @@
 
     $router->get("/code", function() {
         echo CodeViewer::file();
+    });
+
+    $router->get("/download", function() {
+        echo Download::init();
     });
 
     $router->execute();
